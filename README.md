@@ -15,7 +15,6 @@ In this case study, you will use EDA to understand how consumer attributes and l
 
 
 ## Problem Statement
-
 When a person applies for a loan, there are two types of decisions that could be taken by the company:
 
 Loan accepted: If the company approves the loan, there are 3 possible scenarios described below:
@@ -28,46 +27,27 @@ If one is able to identify these risky loan applicants, then such loans can be r
 
 In other words, the company wants to understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default. The company can utilise this knowledge for its portfolio and risk assessment.
 
+## Analysis Approach
+The essence of the whole project is to analyze and understand how consumer attributes and loan  attributes are influencing the tendency of defaulting.
 
-<!-- You can include any other section that is pertinent to your problem -->
+We performed data cleaning and preparation on the Loan dataset:
+  Imputed the NA values for all the variables
+  Created two new columns: 
+  1. Profit and Loss column
+  2. Ratio of funded amount and annual income
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+During univariate analysis we have created:
+  Histograms and Bar charts to check out the distribution of all the driver variables
+  Box plots to detect the Outliers
+  Performed the Multivariate analysis to understand how different variables interact with each  other.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Low grade loans have high tendency to default.  Grading system is working as expected.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Loans having higher interest rate have more  defaulters. Check the background of applicant  thoroughly if interest rate is high.
 
+- Extra scrutiny must be done for the applicants  belonging to CA state, as tendency to default is  high.
 
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- When the purpose is debt consolidation check  applicant thoroughly as it has high tendency to  default.
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
